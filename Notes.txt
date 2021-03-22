@@ -1,0 +1,29 @@
+4 Principles in OOP:
+
+1. Encapsulation -> hiding fields or methods
+
+2. Inheritance -> When one class extends from another class by using the 'extends' keyword. By default all classes
+in Java inherit from Object class in JDK. Object class is available since JDK 1.0
+
+A class can extend from one class at a time, a class cannot extend from multiple classes.
+when one class extends from another class, it can only inherit public, default and protected fields, but not private fields
+
+When one class extends from another class, there is a IS-A relationship.
+For example, Dog class extends from Animal class. As a result, Dog IS-A animal which means Dog is an animal
+There is a IS-A and HAS-A relationship. More on the HAS-A later.
+
+Benefits of using inheritance
+1. Eliminates redundant code by extending from parent class and re-use them
+2. We dont always have to use what the parent class is providing through inheritance. we can always override the methods
+from the super class.  
+3.  We can only override from the super class, in other words, there has to be IS-A relationship in order to override
+
+
+final keyword
+1. if use the final keyword before class name, that class cannot be inherited. For example, public final class Dog{}, this class
+is final which means it cannot be inherited
+
+2. using final keyword in variables. For example, 'private final int number = 1', which means number variables is final and it cannot
+be re-assigned a new value like a regular variable. You should always initialize your variables when using final keyword. 
+
+3. if you use the final keyword in the method signature, that method can be inherited but we cannot override it. 
